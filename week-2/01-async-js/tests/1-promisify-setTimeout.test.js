@@ -12,7 +12,7 @@ describe("wait function", () => {
       });
   }, 2000); // Set timeout to 2000 ms (2 seconds)
 
-  test("resolves after 2 seconds", () => {
+  test("resolves after 2 second", () => {
     const start = Date.now();
     return expect(wait(2))
       .resolves.toBeUndefined() // Wait for 2 seconds
@@ -23,7 +23,7 @@ describe("wait function", () => {
       });
   }, 3000); // Set timeout to 3000 ms (3 seconds)
 
-  test("resolves after 3 seconds", () => {
+  test("resolves after 3 second", () => {
     const start = Date.now();
     return expect(wait(3))
       .resolves.toBeUndefined() // Wait for 3 seconds
